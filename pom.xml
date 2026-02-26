@@ -8,20 +8,20 @@
     <dependency>
         <groupId>org.openqa.selenium</groupId>
         <artifactId>selenium-java</artifactId>
-        <version>4.21.0</version>
+        <version>4.10.0</version>
     </dependency>
 
     <dependency>
         <groupId>org.testng</groupId>
         <artifactId>testng</artifactId>
-        <version>7.10.2</version>
+        <version>7.7.1</version>
         <scope>test</scope>
     </dependency>
 
     <dependency>
         <groupId>io.github.bonigarcia</groupId>
         <artifactId>webdrivermanager</artifactId>
-        <version>5.9.2</version>
+        <version>5.4.1</version>
     </dependency>
   </dependencies>
 
@@ -30,7 +30,7 @@
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-surefire-plugin</artifactId>
-        <version>3.2.5</version>
+        <version>3.1.2</version>
         <configuration>
           <suiteXmlFiles>
             <suiteXmlFile>testng.xml</suiteXmlFile>
