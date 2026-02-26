@@ -8,7 +8,7 @@
     <dependency>
         <groupId>org.openqa.selenium</groupId>
         <artifactId>selenium-java</artifactId>
-        <version>4.10.0</version>
+        <version>4.19.1</version>
     </dependency>
 
     <dependency>
