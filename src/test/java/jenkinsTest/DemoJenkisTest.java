@@ -24,10 +24,13 @@ public class DemoJenkisTest {
 	WebDriverWait wait;
 	@BeforeMethod
 	public void setup() {
+		io.github.bonigarcia.wdm.WebDriverManager.edgedriver().setup();
 		org.openqa.selenium.edge.EdgeOptions options = new org.openqa.selenium.edge.EdgeOptions();
 	    options.addArguments("--headless");
+		options.addArguments("--disable-gpu");
+    	options.addArguments("--window-size=1920,1080");
 		
-		driver=new EdgeDriver();
+		driver = new org.openqa.selenium.edge.EdgeDriver(options);
 		wait= new WebDriverWait(driver, Duration.ofSeconds(10));
 		driver.manage().window().maximize();
 		driver.get("https://www.saucedemo.com/");
