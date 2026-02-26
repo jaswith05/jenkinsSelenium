@@ -3,14 +3,13 @@
   <groupId>com.JenkisTest</groupId>
   <artifactId>jenkins</artifactId>
   <version>0.0.1-SNAPSHOT</version>
-  
-<dependencies>
-   <dependency>
+
+  <dependencies>
     <dependency>
-    <groupId>org.openqa.selenium</groupId>
-    <artifactId>selenium-java</artifactId>
-    <version>4.21.0</version>
-</dependency>
+        <groupId>org.openqa.selenium</groupId>
+        <artifactId>selenium-java</artifactId>
+        <version>4.21.0</version>
+    </dependency>
 
     <dependency>
         <groupId>org.testng</groupId>
@@ -19,27 +18,25 @@
         <scope>test</scope>
     </dependency>
 
- 
     <dependency>
         <groupId>io.github.bonigarcia</groupId>
         <artifactId>webdrivermanager</artifactId>
         <version>5.9.2</version>
     </dependency>
-</dependencies>
+  </dependencies>
 
-<build>
+  <build>
     <plugins>
-        <plugin>
-            <groupId>org.apache.maven.plugins</groupId>
-            <artifactId>maven-surefire-plugin</artifactId>
-            <version>3.2.5</version>
-            <configuration>
-                <suiteXmlFiles>
-                    <suiteXmlFile>testng.xml</suiteXmlFile>
-                </suiteXmlFiles>
-            </configuration>
-        </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-plugin</artifactId>
+        <version>3.2.5</version>
+        <configuration>
+          <suiteXmlFiles>
+            <suiteXmlFile>testng.xml</suiteXmlFile>
+          </suiteXmlFiles>
+        </configuration>
+      </plugin>
     </plugins>
-</build>
-  
+  </build>
 </project>
